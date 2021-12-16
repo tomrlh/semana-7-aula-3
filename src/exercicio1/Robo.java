@@ -15,6 +15,11 @@ class Filho extends Pai {
     }
 }
 
+@interface Test {}
+
+@Test
+class Ann {}
+
 public class Robo {
     public int unidades;
 
@@ -27,7 +32,7 @@ public class Robo {
         return this.unidades;
     }
 
-
+    Ann ann = new Ann();
 
     public static void main(String[] args) {
         Robo robo = new Robo();
